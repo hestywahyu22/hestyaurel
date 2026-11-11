@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'segeo UI', Tahoma, Geneva, Verdana, sans-sarif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  line-heigth: 1.6;
+}
+
+header {
+  background-color: #008cba;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-column: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  bacground: white;
+  border-radius: 10px;
+  overow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2 ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  heght: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between:
+  align-items: center;
+}
+
+.prince {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #008cba:
+}
+
+.btn-order {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: backgrond-color 0.2s;
+}
+
+.btn-order:hover {
+  background-color: #005f73;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left 0;
+  width: 100%;
+  height: 100%;
+  backgroun-color: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.model-content {
+  backgroun-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  tex-align: center;
+}
+
+.close-btn { 
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.modal-prince {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #008cba;
+  margin: 1rem 0;
+}
+
+.btn-confirm {
+  background-color: #28a745;
+  coloe: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  background-color: #218838;
+}
